@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    max-width: 1440px;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.bg_list {
+    background-color: rgb(255, 255, 255);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.255));
+    border-radius: 10px;
+    padding: 30px;
+    gap: 15px;
+}
+
+.input_bg {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.inpAll {
+    max-width: 199px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.inputFile {
+    color: rgb(91, 99, 112);
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.inpFile {
+    font-size: 9px;
+}
+
+.btnAdd {
+    cursor: pointer;
+    padding: 0px 10px;
+    background-color: rgb(64, 194, 57);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.btnAdd:hover {
+    transition: all .3s;
+    background-color: rgb(51, 174, 30);
+}
+
+.list {
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.li_list {
+    position: relative;
+    background-color: rgb(255, 244, 244);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 3px;
+    padding-right: 5px;
+}
+
+.imgFile {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.spanText {
+    margin-left: 10px;
+    color: rgb(91, 99, 112);
+    font-size: 15px;
+}
+
+.btnClosed {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    background-color: pink;
+    color: #ffffff;
+    border: none;
+    width: 15px;
+    height: 15px;
+}
+
+.btnClosed:hover {
+    transition: all .4s;
+    background-color: rgb(231, 179, 188);
+}
+
+@media (max-width: 360px) {
+
+    .input_bg {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        border: none;
+    }
+
+    .inputFile {
+        text-align: center;
+        border: 1px solid rgb(221, 221, 221);
+    }
+
+    .btnAdd {
+        padding: 5px 10px;
+    }
+
+}
